@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Head from 'next/head'
 
 const Home = () => {
   return (
@@ -16,7 +16,7 @@ const Home = () => {
 
       <style jsx>{`
         div {
-          font-family: "DM Sans", sans-serif;
+          font-family: 'DM Sans', sans-serif;
           display: flex;
           width: 100vw;
           height: 100vh;
@@ -33,7 +33,7 @@ const Home = () => {
         }
       `}</style>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
