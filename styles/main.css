@@ -12,6 +12,41 @@
   --text-lg: 1.25rem;
   --text-xl: 2rem;
   --text-2xl: 2.25rem;
+
+  /* Color Pallet */
+  --neutral-00: #fff;
+  --neutral-05: #f3f3f3;
+  --neutral-10: #e7e7e7;
+  --neutral-20: #d0d0d0;
+  --neutral-40: #a0a0a0;
+  --neutral-60: #717171;
+  --neutral-80: #414141;
+  --neutral-90: #2a2a2a;
+  --neutral-95: #1e1e1e;
+  --neutral-100: #121212;
+
+  --primary-10: #edefff;
+  --primary-40: #b6bdff;
+  --primary-60: #919dff;
+  --primary-80: #6d7cff;
+  --primary-100: #485bff;
+  --primary-120: #3a49cc;
+  --primary-140: #2b3799;
+  --primary-160: #1d2466;
+  --primary-190: #07091a;
+
+  /* Theme Tokens */
+  --text-primary: var(--neutral-100);
+  --text-secondary: var(--neutral-80);
+  --text-tertiary: var(--neutral-60);
+  --text-accent: var(--primary-100);
+
+  --ui-primary: var(--neutral-60);
+  --ui-secondary: var(--neutral-20);
+  --ui-tertiary: var(--neutral-10);
+
+  --geist-foreground: var(--neutral-100);
+  --geist-background: var(--neutral-00);
 }
 
 *,
