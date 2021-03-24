@@ -5,6 +5,7 @@ import {
   DEFAULT_TITLE,
 } from 'lib/constants'
 import Footer from '../Footer/Footer'
+import s from './Layout.module.css'
 
 type Props = {
   children: React.ReactNode
@@ -33,7 +34,7 @@ const Layout = ({
         date={date}
       />
 
-      <main>{children}</main>
+      <main className={s.main}>{children}</main>
 
       <Footer />
     </>

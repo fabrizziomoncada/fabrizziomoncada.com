@@ -16,8 +16,8 @@ import s from './Footer.module.css'
 const Footer = () => {
   return (
     <footer className={s.root}>
-      <p>Be nice :)</p>
-      <div>
+      <p className={s.legend}>Be nice :)</p>
+      <div className={s.linksContainer}>
         <IconButton href={instagramURL} external ariaLabel="link to instagram">
           <Instagram />
         </IconButton>

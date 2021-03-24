@@ -1,6 +1,8 @@
 import { CSSProperties, MouseEvent } from 'react'
 import Link from 'next/link'
 import ExternalLink from '../ExternalLink/ExternalLink'
+import cn from 'classnames'
+import s from './iconButton.module.css'
 
 type Props = {
   children: React.ReactNode
@@ -10,6 +12,7 @@ type Props = {
   ariaLabel?: string
   href?: string
   external?: boolean
+  variant?: 'default' | 'outline' | 'primary'
 }
 
 const IconButton = ({
@@ -19,15 +22,26 @@ const IconButton = ({
   style,
   ariaLabel,
   href,
+  variant = 'default',
   external = false,
 }: Props) => {
+  const ButtonClassName = cn(
+    s.root,
+    {
+      [s.default]: variant === 'default',
+      [s.outline]: variant === 'outline',
+      [s.primary]: variant === 'primary',
+    },
+    className
+  )
+
   if (href && external) {
     return (
       <ExternalLink
         href={href}
         ariaLabel={ariaLabel}
         style={style}
-        className={className}
+        className={ButtonClassName}
       >
         {children}
       </ExternalLink>
@@ -37,7 +51,7 @@ const IconButton = ({
   if (href) {
     return (
       <Link href={href}>
-        <a aria-label={ariaLabel} style={style} className={className}>
+        <a aria-label={ariaLabel} style={style} className={ButtonClassName}>
           {children}
         </a>
       </Link>
@@ -49,7 +63,7 @@ const IconButton = ({
       onClick={onClick}
       style={style}
       aria-label={ariaLabel}
-      className={className}
+      className={ButtonClassName}
     >
       {children}
     </button>
