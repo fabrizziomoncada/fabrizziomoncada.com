@@ -18,19 +18,19 @@ const Footer = () => {
     <footer className={s.root}>
       <p>Be nice :)</p>
       <div>
-        <IconButton href={instagramURL} ariaLabel="Link to Instagram">
+        <IconButton href={instagramURL} external ariaLabel="link to instagram">
           <Instagram />
         </IconButton>
-        <IconButton href={FigmaURL} ariaLabel="Link to Figma">
+        <IconButton href={FigmaURL} external ariaLabel="Link to Figma">
           <Figma />
         </IconButton>
-        <IconButton href={EmailURL} ariaLabel="Send an email">
+        <IconButton href={EmailURL} external ariaLabel="Send an email">
           <Mail />
         </IconButton>
-        <IconButton href={BehanceURL} ariaLabel="Link to Instagram">
+        <IconButton href={BehanceURL} external ariaLabel="Link to Instagram">
           <Behance />
         </IconButton>
-        <IconButton href={DribbbleURL} ariaLabel="Link to Dribbble">
+        <IconButton href={DribbbleURL} external ariaLabel="Link to Dribbble">
           <Dribbble />
         </IconButton>
       </div>
