@@ -49,6 +49,21 @@
   --geist-background: var(--neutral-00);
 }
 
+[data-theme='dark'] {
+  /* Theme Tokens */
+  --text-primary: var(--neutral-00);
+  --text-secondary: var(--neutral-20);
+  --text-tertiary: var(--neutral-40);
+  --text-accent: var(--primary-40);
+
+  --ui-primary: var(--neutral-20);
+  --ui-secondary: var(--neutral-60);
+  --ui-tertiary: var(--neutral-80);
+
+  --geist-foreground: var(--neutral-00);
+  --geist-background: var(--neutral-100);
+}
+
 *,
 *:before,
 *:after {
@@ -71,8 +86,8 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--secondary);
-  color: var(--primary);
+  background-color: var(--geist-background);
+  color: var(--geist-foreground);
 }
 
 body {
@@ -89,7 +104,7 @@ button {
   padding: 0;
 }
 a {
-  color: var(--primary);
+  color: var(--text-primary);
   text-decoration: none;
 }
 

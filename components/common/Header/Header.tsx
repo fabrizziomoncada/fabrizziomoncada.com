@@ -1,7 +1,7 @@
 import Globe from 'components/icons/Globe'
-import Sun from 'components/icons/Sun'
 import { IconButton } from '../ui/IconButton'
 import s from './Header.module.css'
+import ThemeChanger from './ThemeChanger'
 
 const Header = () => {
   return (
@@ -10,9 +10,7 @@ const Header = () => {
         <Globe />
       </IconButton>
 
-      <IconButton>
-        <Sun />
-      </IconButton>
+      <ThemeChanger />
     </header>
   )
 }
