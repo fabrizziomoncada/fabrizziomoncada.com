@@ -1,6 +1,6 @@
 import NextHead from 'next/head'
 import { useRouter } from 'next/router'
-import { SITE_URL, TwitterURL, TWITTER_USERNAME } from '../../lib/constants'
+import { SITE_URL, TwitterURL, TWITTER_USERNAME } from 'lib/constants'
 
 type Props = {
   title: string
@@ -14,6 +14,37 @@ const Head = ({ title, description, image, type, date }: Props) => {
   const router = useRouter()
   return (
     <NextHead>
+      {/* Fonts */}
+      <link
+        rel="preload"
+        href="/fonts/dm-sans-latin-regular.woff2"
+        as="font"
+        type="font/woff2"
+        crossOrigin="anonymous"
+      />
+      <link
+        rel="preload"
+        href="/fonts/dm-sans-latin-500.woff2"
+        as="font"
+        type="font/woff2"
+        crossOrigin="anonymous"
+      />
+      <link
+        rel="preload"
+        href="/fonts/dm-sans-latin-700.woff2"
+        as="font"
+        type="font/woff2"
+        crossOrigin="anonymous"
+      />
+      <link
+        rel="preload"
+        href="/fonts/dm-sans-latin-italic.woff2"
+        as="font"
+        type="font/woff2"
+        crossOrigin="anonymous"
+      />
+
+      {/* SEO */}
       <title>{title}</title>
       <meta name="robots" content="follow, index" />
       <meta name="description" content={description} />

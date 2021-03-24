@@ -3,14 +3,6 @@ import Head from 'next/head'
 const Home = () => {
   return (
     <div>
-      <Head>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
-          rel="stylesheet"
-        />
-        <title>Fabrizzio Moncada</title>
-      </Head>
       <h1>fabrizziomoncada.com</h1>
       <p>coming soon...</p>
 
