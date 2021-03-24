@@ -1,0 +1,12 @@
+.root {
+  width: 100%;
+}
+
+.title {
+  margin: 0.5rem 0;
+  font-size: var(--text-xl);
+}
+
+.description {
+  font-size: var(--text-md);
+}
