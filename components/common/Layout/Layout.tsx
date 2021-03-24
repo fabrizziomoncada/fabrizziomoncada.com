@@ -5,6 +5,7 @@ import {
   DEFAULT_TITLE,
 } from 'lib/constants'
 import Footer from '../Footer/Footer'
+import Header from '../Header/Header'
 import s from './Layout.module.css'
 
 type Props = {
@@ -33,6 +34,8 @@ const Layout = ({
         type={type}
         date={date}
       />
+
+      <Header />
 
       <main className={s.main}>{children}</main>
 

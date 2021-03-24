@@ -1,0 +1,10 @@
+.root {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  background: var(--geist-background);
+  padding: 1rem 0.5rem;
+  justify-content: space-between;
+}
