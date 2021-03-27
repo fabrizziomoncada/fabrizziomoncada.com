@@ -5,9 +5,13 @@
   padding: 2.5rem 0;
 }
 
+.cover {
+  border-radius: 1.5rem;
+}
+
 .title {
   font-size: var(--text-xl);
-  margin: 0;
+  margin: 1.5rem 0 0;
 }
 
 .description {

@@ -3,14 +3,22 @@ import { IconButton } from 'components/common/ui/IconButton'
 import Figma from 'components/icons/Figma'
 import Globe from 'components/icons/Globe'
 import s from './ProjectCard.module.css'
+import Image from 'next/image'
 
 const ProjectCard = ({
-  project: { title, description, urls },
+  project: { title, description, cover, urls },
 }: {
   project: TProject
 }) => {
   return (
     <div className={s.root}>
+      <Image
+        src={cover}
+        alt={title}
+        width={327}
+        height={327}
+        className={s.cover}
+      />
       <h3 className={s.title}>{title}</h3>
       <p className={s.description}>{description}</p>
       <div className={s.buttons}>
