@@ -3,10 +3,11 @@
 }
 
 .title {
-  margin: 0.5rem 0;
-  font-size: var(--text-xl);
+  margin: 0.25rem 0;
+  font-size: var(--text-2xl);
 }
 
 .description {
-  font-size: var(--text-md);
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
 }

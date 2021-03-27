@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "tassel",
+    "title": "Tassel",
+    "description": "UI & UX design for a fashion marketplace.Personal conceptual side project.",
+    "cover": "/images/project-cover.png",
+    "urls": {
+      "url": null,
+      "figma": "sting"
+    }
+  },
+  {
+    "slug": "dejame-te-cuento",
+    "title": "Tassel",
+    "description": "UI & UX design for a fashion marketplace.Personal conceptual side project.",
+    "cover": "/images/project-cover.png",
+    "urls": {
+      "url": "sting",
+      "figma": "sting"
+    }
+  },
+  {
+    "slug": "the-paper-matter",
+    "title": "Tassel",
+    "description": "UI & UX design for a fashion marketplace.Personal conceptual side project.",
+    "cover": "/images/project-cover.png",
+    "urls": {
+      "url": "sting",
+      "figma": "sting"
+    }
+  }
+]

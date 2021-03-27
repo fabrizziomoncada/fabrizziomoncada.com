@@ -46,6 +46,7 @@
   --ui-primary: var(--neutral-60);
   --ui-secondary: var(--neutral-20);
   --ui-tertiary: var(--neutral-10);
+  --ui-accent: var(--primary-100);
 
   --geist-foreground: var(--neutral-100);
   --geist-background: var(--neutral-00);
@@ -61,6 +62,7 @@
   --ui-primary: var(--neutral-20);
   --ui-secondary: var(--neutral-60);
   --ui-tertiary: var(--neutral-80);
+  --ui-accent: var(--primary-40);
 
   --geist-foreground: var(--neutral-00);
   --geist-background: var(--neutral-100);

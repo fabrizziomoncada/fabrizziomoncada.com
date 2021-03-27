@@ -1,0 +1,18 @@
+.root {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  border-radius: 5rem;
+  font-weight: bold;
+  line-height: 0.5;
+  text-transform: uppercase;
+  font-size: var(--text-xs);
+}
+
+.default {
+  background: var(--ui-accent);
+  color: var(--geist-background);
+}
+
+.outline {
+  border: 1px solid var(--ui-primary);
+}
