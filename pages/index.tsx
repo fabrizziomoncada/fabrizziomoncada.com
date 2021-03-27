@@ -1,3 +1,4 @@
+import { Hero } from 'components/common/Hero'
 import { Layout } from 'components/common/Layout'
 import Section from 'components/common/Section/Section'
 import ProjectCard from 'components/project/ProjectCard/ProjectCard'
@@ -7,6 +8,7 @@ import { GetStaticProps, InferGetStaticPropsType } from 'next'
 const Home = ({ projects }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <Layout>
+      <Hero />
       <Section
         title="Projects"
         description="I’ve worked with start-ups and small companies, also I’ve created some concepts for my personal side projects."

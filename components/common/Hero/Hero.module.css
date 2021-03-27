@@ -1,0 +1,23 @@
+.root {
+  min-height: calc(100vh - 10rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  font-size: var(--text-3xl);
+  font-weight: 400;
+}
+
+.tagline {
+  position: absolute;
+  bottom: 0;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-tertiary);
+}
