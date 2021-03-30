@@ -5,6 +5,7 @@ import {
   DEFAULT_TITLE,
 } from 'lib/constants'
 import Footer from '../Footer/Footer'
+import ArticleHeader from '../Header/ArticleHeader'
 import Header from '../Header/Header'
 import s from './Layout.module.css'
 
@@ -35,7 +36,7 @@ const Layout = ({
         date={date}
       />
 
-      <Header />
+      {type === 'article' ? <ArticleHeader title={title} /> : <Header />}
 
       <main className={s.main}>{children}</main>
 
