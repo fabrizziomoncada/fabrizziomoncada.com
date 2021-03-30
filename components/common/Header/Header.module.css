@@ -7,4 +7,11 @@
   background: var(--geist-background);
   padding: 1rem 0.5rem;
   justify-content: space-between;
+  z-index: 1000;
+  transform: translateY(0);
+  transition: transform 0.2s;
+}
+
+.hide {
+  transform: translateY(-100%);
 }
