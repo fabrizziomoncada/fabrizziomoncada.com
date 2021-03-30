@@ -6,7 +6,7 @@ import s from './ProjectCard.module.css'
 import Image from 'next/image'
 
 const ProjectCard = ({
-  project: { title, description, cover, urls },
+  project: { title, description, cover, urls, slug },
 }: {
   project: TProject
 }) => {
@@ -27,7 +27,7 @@ const ProjectCard = ({
             <Globe />
           </IconButton>
         )}
-        <Button>Read case study</Button>
+        <Button href={`/projects/${slug}`}>Read case study</Button>
         {urls.figma && (
           <IconButton variant="outline">
             <Figma />

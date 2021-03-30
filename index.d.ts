@@ -8,3 +8,17 @@ type TProject = {
     figma: string
   }
 }
+
+type TProjectArticle = {
+  slug: string
+  title: string
+  date: string
+  description: string
+  image?: string
+  content: string
+}
+
+type TProjectLink = {
+  slug: string
+  title: string
+}
