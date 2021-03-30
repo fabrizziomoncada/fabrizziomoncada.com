@@ -1,5 +1,6 @@
 export const SITE_URL = 'https://fabrizziomoncada.com'
 export const TWITTER_USERNAME = '@edgarlr'
+export const INSTAGRAM_USERNAME = '@fabrizzio.design'
 
 // Social Links
 export const TwitterURL = 'https://twitter.com/edgarlr_'
