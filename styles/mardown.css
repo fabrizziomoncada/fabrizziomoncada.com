@@ -1,0 +1,109 @@
+.markdown {
+  max-width: 100%;
+  line-height: 1.625;
+}
+.markdown > * + p {
+  color: var(--text-primary);
+  margin: 1rem 0;
+}
+
+.markdown img {
+  max-width: 100%;
+  width: auto;
+  margin: auto;
+  display: block;
+  border-radius: var(--border-radius);
+}
+
+.markdown h2 {
+  font-size: var(--text-lg);
+  margin-top: 3rem;
+}
+
+.markdown h3 {
+  margin-top: var(--gap-triple);
+}
+
+.markdown hr {
+  border: none;
+  border-top: var(--border);
+}
+
+.markdown em {
+  display: block;
+  text-align: center;
+  font-size: var(--font-size-xs);
+  color: var(--fg-light);
+}
+
+/* Blockquote*/
+.markdown blockquote {
+  margin: 0;
+  padding: var(--gap) var(--gap-15);
+  border-left: 4px solid var(--fg);
+  background-color: var(--overlay);
+}
+
+.markdown blockquote * {
+  color: var(--fg-light);
+}
+
+.markdown blockquote p {
+  font-style: italic;
+  font-size: var(--font-size-s);
+  line-height: 1.25;
+}
+
+.markdown blockquote p code {
+  font-style: normal;
+}
+
+/* Code Snippets */
+.markdown pre {
+  overflow-x: auto;
+  background: var(--overlay);
+  border-radius: var(--border-radius);
+  line-height: 1.8;
+  padding: var(--gap) var(--gap-15);
+  font-size: var(--font-size-xs);
+}
+
+.markdown *:not(pre) > code {
+  font-size: var(--font-size-xs);
+  padding: 0 8px;
+  background: none;
+}
+
+.markdown *:not(pre) > code::before,
+.markdown *:not(pre) > code::after {
+  content: '\`';
+  color: var(--fg);
+  user-select: none;
+}
+
+/* List */
+.markdown ul {
+  padding: 0 var(--gap-75);
+  list-style-position: inside;
+  list-style-type: circle;
+}
+
+.markdown ol {
+  padding: var(--gap-half);
+  list-style-position: outside;
+}
+
+.markdown li {
+  margin-top: var(--gap);
+}
+
+.markdown ul li {
+  list-style-type: disc;
+  color: var(--fg);
+  font-size: var(--font-size-s);
+  line-height: 1.25;
+}
+
+.markdown ul li strong {
+  color: var(--fg);
+}
