@@ -51,6 +51,9 @@
 
   --geist-foreground: var(--neutral-100);
   --geist-background: var(--neutral-00);
+  --gesit-gradiant-from: #00a3ff;
+  --gesit-gradiant-to: #ff00c7;
+  --gesit-gradiant-opacity: 0.5;
 }
 
 [data-theme='dark'] {
@@ -67,6 +70,9 @@
 
   --geist-foreground: var(--neutral-00);
   --geist-background: var(--neutral-100);
+  --gesit-gradiant-from: #00ff38;
+  --gesit-gradiant-to: #0500ff;
+  --gesit-gradiant-opacity: 0.8;
 }
 
 @media screen and (min-width: 768px) {

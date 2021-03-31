@@ -8,10 +8,32 @@
   position: relative;
 }
 
+.root::before {
+  content: ' ';
+  width: 70%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -42.5%);
+  background: linear-gradient(
+    125deg,
+    var(--gesit-gradiant-from),
+    var(--gesit-gradiant-to)
+  );
+  background: conic-gradient(
+    var(--gesit-gradiant-from),
+    var(--gesit-gradiant-to)
+  );
+  opacity: var(--gesit-gradiant-opacity);
+  filter: blur(70px);
+}
+
 .title {
   text-align: center;
   font-size: var(--text-3xl);
   font-weight: 400;
+  z-index: 2;
 }
 
 .tagline {
@@ -20,4 +42,9 @@
   font-weight: 400;
   font-style: italic;
   color: var(--text-tertiary);
+}
+
+.map {
+  position: absolute;
+  z-index: 1;
 }
