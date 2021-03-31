@@ -9,8 +9,10 @@ type Props = {
 const Section = ({ title, description, children }: Props) => {
   return (
     <section className={s.root}>
-      <h2 className={s.title}>{title}</h2>
-      <p className={s.description}>{description}</p>
+      <div className={s.subhead}>
+        <h2 className={s.title}>{title}</h2>
+        <p className={s.description}>{description}</p>
+      </div>
       {children}
     </section>
   )

@@ -11,3 +11,18 @@
   font-size: var(--text-lg);
   color: var(--text-secondary);
 }
+
+@media screen and (min-width: 1440px) {
+  .subhead {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: 5rem auto;
+  }
+  .title {
+    flex: 0 0 30%;
+  }
+  .description {
+    flex: 0 0 1;
+  }
+}
