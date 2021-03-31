@@ -58,6 +58,31 @@
     text-align: left;
   }
   .root::before {
-    width: 40%;
+    width: 35%;
+    height: 60%;
+    transform: translate(50%, -35%);
+  }
+  .map {
+    transform: scale(1.4);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tagline {
+    right: 0;
+  }
+  .tagline::before {
+    content: ' ';
+    position: absolute;
+    width: 55vw;
+    right: 0;
+    transform: translate(-13rem, -50%);
+    height: 1px;
+    background: linear-gradient(to right, white 33%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 5px 1px;
+    background-repeat: repeat-x;
+    right: 0;
+    top: 50%;
   }
 }
