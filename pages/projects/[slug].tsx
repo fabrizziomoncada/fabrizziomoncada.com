@@ -20,7 +20,10 @@ export default function ProjectPage({ project, projectsLinks }: Props) {
     >
       <ArticleHead title={project.title} date={project.date} />
 
-      <article dangerouslySetInnerHTML={{ __html: project.content }} />
+      <article
+        className="markdown"
+        dangerouslySetInnerHTML={{ __html: project.content }}
+      />
 
       <ArticleNav projectsLinks={projectsLinks} />
     </Layout>
