@@ -20,9 +20,9 @@ const CDMXMap = () => {
           width="727"
           height="847.038"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImage" stdDeviation="100" />
           <feComposite
             in2="SourceAlpha"
