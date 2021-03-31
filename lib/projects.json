@@ -6,7 +6,7 @@
     "cover": "/images/project-cover.png",
     "urls": {
       "url": null,
-      "figma": "sting"
+      "figma": "https://www.figma.com/community/file/930872073422001170/Magazine-Mobile-UI-Kit"
     }
   },
   {
@@ -15,8 +15,8 @@
     "description": "UI & UX design for a fashion marketplace.Personal conceptual side project.",
     "cover": "/images/project-cover.png",
     "urls": {
-      "url": "sting",
-      "figma": "sting"
+      "url": "https://magazine-starter.vercel.app/",
+      "figma": "https://www.figma.com/community/file/930872073422001170/Magazine-Mobile-UI-Kit"
     }
   },
   {
@@ -25,8 +25,8 @@
     "description": "UI & UX design for a fashion marketplace.Personal conceptual side project.",
     "cover": "/images/project-cover.png",
     "urls": {
-      "url": "sting",
-      "figma": "sting"
+      "url": "https://magazine-starter.vercel.app/",
+      "figma": "https://www.figma.com/community/file/930872073422001170/Magazine-Mobile-UI-Kit"
     }
   }
 ]

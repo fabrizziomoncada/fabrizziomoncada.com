@@ -6,6 +6,9 @@
   line-height: 0.5;
   text-transform: uppercase;
   font-size: var(--text-xs);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .default {

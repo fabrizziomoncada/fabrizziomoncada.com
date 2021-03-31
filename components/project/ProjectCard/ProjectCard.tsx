@@ -23,13 +23,13 @@ const ProjectCard = ({
       <p className={s.description}>{description}</p>
       <div className={s.buttons}>
         {urls.url && (
-          <IconButton variant="outline">
+          <IconButton variant="outline" href={urls.url}>
             <Globe />
           </IconButton>
         )}
         <Button href={`/projects/${slug}`}>Read case study</Button>
         {urls.figma && (
-          <IconButton variant="outline">
+          <IconButton variant="outline" href={urls.figma}>
             <Figma />
           </IconButton>
         )}
