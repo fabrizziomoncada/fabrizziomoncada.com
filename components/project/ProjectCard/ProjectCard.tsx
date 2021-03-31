@@ -15,24 +15,26 @@ const ProjectCard = ({
       <Image
         src={cover}
         alt={title}
-        width={327}
-        height={327}
+        width={550}
+        height={550}
         className={s.cover}
       />
-      <h3 className={s.title}>{title}</h3>
-      <p className={s.description}>{description}</p>
-      <div className={s.buttons}>
-        {urls.url && (
-          <IconButton variant="outline" href={urls.url}>
-            <Globe />
-          </IconButton>
-        )}
-        <Button href={`/projects/${slug}`}>Read case study</Button>
-        {urls.figma && (
-          <IconButton variant="outline" href={urls.figma}>
-            <Figma />
-          </IconButton>
-        )}
+      <div className={s.info}>
+        <h3 className={s.title}>{title}</h3>
+        <p className={s.description}>{description}</p>
+        <div className={s.buttons}>
+          {urls.url && (
+            <IconButton variant="outline" href={urls.url}>
+              <Globe />
+            </IconButton>
+          )}
+          <Button href={`/projects/${slug}`}>Read case study</Button>
+          {urls.figma && (
+            <IconButton variant="outline" href={urls.figma}>
+              <Figma />
+            </IconButton>
+          )}
+        </div>
       </div>
     </div>
   )
