@@ -6,11 +6,10 @@ import markdownToHtml from 'lib/markdown-to-html'
 
 type Props = {
   project: TProjectArticle
-  prev: TProjectLink
-  next: TProjectLink
+  projectsLinks: TProjectLink[]
 }
 
-export default function ProjectPage({ project, prev, next }: Props) {
+export default function ProjectPage({ project, projectsLinks }: Props) {
   return (
     <Layout
       type="article"
@@ -23,7 +22,7 @@ export default function ProjectPage({ project, prev, next }: Props) {
 
       <article dangerouslySetInnerHTML={{ __html: project.content }} />
 
-      <ArticleNav prev={prev} next={next} />
+      <ArticleNav projectsLinks={projectsLinks} />
     </Layout>
   )
 }
@@ -61,11 +60,7 @@ export async function getStaticProps({ params }: Params) {
 
   const content = await markdownToHtml(project.content || '')
 
-  const projects = getAllProjects(['slug', 'title'])
-  const postIndex = projects.findIndex((p) => p.slug === project.slug)
-
-  const prev = projects[postIndex - 1] || null
-  const next = projects[postIndex + 1] || null
+  const projectsLinks = getAllProjects(['slug', 'title'])
 
   return {
     props: {
@@ -73,8 +68,7 @@ export async function getStaticProps({ params }: Params) {
         ...project,
         content,
       },
-      prev,
-      next,
+      projectsLinks,
     },
   }
 }
