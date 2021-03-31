@@ -48,3 +48,16 @@
   position: absolute;
   z-index: 1;
 }
+
+@media screen and (min-width: 769px) {
+  .root {
+    width: 85%;
+    margin: 0 auto 5rem;
+  }
+  .title {
+    text-align: left;
+  }
+  .root::before {
+    width: 40%;
+  }
+}
