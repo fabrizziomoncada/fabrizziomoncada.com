@@ -14,7 +14,7 @@ type TProjectArticle = {
   title: string
   date: string
   description: string
-  image?: string
+  cover?: string
   content: string
 }
 

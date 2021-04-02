@@ -3,6 +3,7 @@ import ArticleHead from 'components/project/ArticleHead/ArticleHead'
 import ArticleNav from 'components/project/ArticleNav/ArticleNav'
 import { getAllProjects, getProjectBySlug } from 'lib/api'
 import markdownToHtml from 'lib/markdown-to-html'
+import Image from 'next/image'
 
 type Props = {
   project: TProjectArticle
@@ -15,10 +16,19 @@ export default function ProjectPage({ project, projectsLinks }: Props) {
       type="article"
       title={project.title}
       description={project.description}
-      image={project.image}
+      image={project.cover}
       date={new Date(project.date).toISOString()}
     >
       <ArticleHead title={project.title} date={project.date} />
+
+      {project.cover && (
+        <Image
+          src={project.cover}
+          alt={project.title}
+          width={580}
+          height={580}
+        />
+      )}
 
       <article
         className="markdown"
@@ -56,7 +66,7 @@ export async function getStaticProps({ params }: Params) {
     'slug',
     'title',
     'description',
-    'image',
+    'cover',
     'date',
     'content',
   ])

@@ -1,6 +1,7 @@
 ---
 title: 'Déjame te Cuento'
 date: '2020-01-01'
+cover: '/images/project-cover.png'
 ---
 
 ## Introduction
