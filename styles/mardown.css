@@ -4,7 +4,7 @@
 }
 .markdown > * + p {
   color: var(--text-primary);
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 .markdown img {
@@ -15,9 +15,12 @@
   border-radius: var(--border-radius);
 }
 
+.markdown h2:not(:first-child) {
+  margin-top: 3rem;
+}
+
 .markdown h2 {
   font-size: var(--text-lg);
-  margin-top: 3rem;
 }
 
 .markdown h3 {
