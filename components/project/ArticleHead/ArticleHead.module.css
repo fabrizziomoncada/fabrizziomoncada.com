@@ -1,6 +1,8 @@
 .root {
   padding: 2.5rem 0;
   grid-area: head;
+  opacity: 1;
+  transition: opacity 0.25s;
 }
 
 .title {
@@ -12,6 +14,7 @@
 .date {
   font-size: var(--text-sm);
   color: var(--text-secondary);
+  transition: opacity 0.25s;
 }
 
 .info {
@@ -24,9 +27,26 @@
   align-items: center;
   color: var(--text-accent);
   font-size: var(--text-sm);
+  transition: opacity 0.25s;
 }
 
 .linkIcon {
   line-height: 0.5;
   margin-right: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .root {
+    position: sticky;
+    top: 2.5rem;
+  }
+}
+
+.hide {
+  opacity: 0.25;
+}
+
+.hide .date,
+.hide .link {
+  opacity: 0;
 }

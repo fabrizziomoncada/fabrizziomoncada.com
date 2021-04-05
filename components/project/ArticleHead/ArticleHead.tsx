@@ -1,8 +1,11 @@
+import cn from 'classnames'
 import ExternalLink from 'components/common/ui/ExternalLink/ExternalLink'
-import { IconButton } from 'components/common/ui/IconButton'
 import Instagram from 'components/icons/Instragram'
 import { instagramURL, INSTAGRAM_USERNAME } from 'lib/constants'
 import { getFormattedDate } from 'lib/dateFormatter'
+
+import { useMediaQuery } from 'lib/hooks/use-media-queries'
+import { useEffect, useState } from 'react'
 import s from './ArticleHead.module.css'
 
 type Props = {
@@ -11,8 +14,26 @@ type Props = {
 }
 
 const ArticleHead = ({ title, date }: Props) => {
+  const isTable = useMediaQuery(1023)
+  const [isHided, setIsHided] = useState(false)
+
+  const showText = () => {
+    if (window.scrollY > 200) {
+      setIsHided(true)
+    } else {
+      setIsHided(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', showText)
+    return () => {
+      window.removeEventListener('scroll', showText)
+    }
+  }, [])
+
   return (
-    <div className={s.root}>
+    <div className={cn(s.root, { [s.hide]: isHided && !isTable })}>
       <h1 className={s.title}>{title}</h1>
       <div className={s.info}>
         <ExternalLink href={instagramURL} className={s.link}>
@@ -21,13 +42,6 @@ const ArticleHead = ({ title, date }: Props) => {
           </span>
           {INSTAGRAM_USERNAME}
         </ExternalLink>
-        {/* <IconLink
-          href={TwitterURL}
-          label={author}
-          ariaLabel="Link to author's twitter"
-        >
-          <Twitter width="20" height="20" />
-        </IconLink> */}
         <div className={s.date}>{getFormattedDate(date)}</div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 .root {
   margin: 1rem 0;
   grid-area: nav;
+  z-index: 100;
 }
 
 .headline {
@@ -15,8 +16,18 @@
   font-size: var(--text-lg);
   font-weight: bold;
   margin-bottom: 1rem;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.link:hover {
+  opacity: 0.4;
 }
 
 .index {
   margin-bottom: 0.25rem;
+}
+
+.active {
+  text-decoration: underline;
 }
