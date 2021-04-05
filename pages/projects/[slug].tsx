@@ -1,9 +1,7 @@
 import { Layout } from 'components/common/Layout'
-import ArticleHead from 'components/project/ArticleHead/ArticleHead'
-import ArticleNav from 'components/project/ArticleNav/ArticleNav'
+import Project from 'components/project/Project'
 import { getAllProjects, getProjectBySlug } from 'lib/api'
 import markdownToHtml from 'lib/markdown-to-html'
-import Image from 'next/image'
 
 type Props = {
   project: TProjectArticle
@@ -19,23 +17,7 @@ export default function ProjectPage({ project, projectsLinks }: Props) {
       image={project.cover}
       date={new Date(project.date).toISOString()}
     >
-      <ArticleHead title={project.title} date={project.date} />
-
-      {project.cover && (
-        <Image
-          src={project.cover}
-          alt={project.title}
-          width={580}
-          height={580}
-        />
-      )}
-
-      <article
-        className="markdown"
-        dangerouslySetInnerHTML={{ __html: project.content }}
-      />
-
-      <ArticleNav projectsLinks={projectsLinks} />
+      <Project project={project} projectsLinks={projectsLinks} />
     </Layout>
   )
 }

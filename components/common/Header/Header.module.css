@@ -19,7 +19,7 @@
 
 .title {
   font-style: italic;
-  width: 65%;
+  width: 80%;
   opacity: 0;
   transform: translateY(20%);
   transition: transform, opacity 0.2s;
@@ -34,5 +34,8 @@
   .root {
     width: 85%;
     margin: 0 auto;
+  }
+  .title {
+    width: 90%;
   }
 }

@@ -1,0 +1,22 @@
+.root {
+}
+
+@media screen and (min-width: 1024px) {
+  .root {
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+      'head cover'
+      '. content'
+      'nav content';
+    grid-template-columns: 35% 1fr;
+    gap: 3rem;
+  }
+  .projectMd {
+    grid-area: content;
+  }
+  .cover {
+    grid-area: cover;
+  }
+}

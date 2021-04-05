@@ -78,7 +78,11 @@
     right: 0;
     transform: translate(-13rem, -50%);
     height: 1px;
-    background: linear-gradient(to right, white 33%, rgba(255, 255, 255, 0) 0%);
+    background: linear-gradient(
+      to right,
+      var(--ui-primary) 50%,
+      rgba(255, 255, 255, 0) 0%
+    );
     background-position: bottom;
     background-size: 5px 1px;
     background-repeat: repeat-x;
