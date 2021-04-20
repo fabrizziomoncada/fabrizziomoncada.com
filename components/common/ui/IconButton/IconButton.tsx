@@ -2,7 +2,7 @@ import { CSSProperties, MouseEvent } from 'react'
 import Link from 'next/link'
 import ExternalLink from '../ExternalLink/ExternalLink'
 import cn from 'classnames'
-import s from './iconButton.module.css'
+import s from './IconButton.module.css'
 
 type Props = {
   children: React.ReactNode
