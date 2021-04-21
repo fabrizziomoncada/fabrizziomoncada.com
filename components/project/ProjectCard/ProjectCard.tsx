@@ -29,7 +29,11 @@ const ProjectCard = ({
             </IconButton>
           )}
 
-          {main_link && <Button href={main_link.url}>{main_link.label}</Button>}
+          {main_link && (
+            <Button style={{ height: '2.875rem' }} href={main_link.url}>
+              {main_link.label}
+            </Button>
+          )}
 
           {urls.figma && (
             <IconButton variant="outline" href={urls.figma}>
