@@ -3,7 +3,7 @@
     "slug": "tassel",
     "title": "Tassel",
     "description": "UI & UX design for a fashion marketplace.Personal conceptual side project.",
-    "cover": "/images/project-cover.png",
+    "cover": "https://res.cloudinary.com/dliiwavlg/image/upload/v1618967183/tassel_rfeuwi.png",
     "urls": {
       "url": null,
       "figma": "https://www.figma.com/community/file/930872073422001170/Magazine-Mobile-UI-Kit"
@@ -11,9 +11,9 @@
   },
   {
     "slug": "dejame-te-cuento",
-    "title": "Tassel",
+    "title": "Déjame te Cuento",
     "description": "UI & UX design for a fashion marketplace.Personal conceptual side project.",
-    "cover": "/images/project-cover.png",
+    "cover": "https://res.cloudinary.com/dliiwavlg/image/upload/v1618967184/dtc_rxv3ns.jpg",
     "urls": {
       "url": "https://magazine-starter.vercel.app/",
       "figma": "https://www.figma.com/community/file/930872073422001170/Magazine-Mobile-UI-Kit"
@@ -21,9 +21,9 @@
   },
   {
     "slug": "the-paper-matter",
-    "title": "Tassel",
+    "title": "The Paper Matter",
     "description": "UI & UX design for a fashion marketplace.Personal conceptual side project.",
-    "cover": "/images/project-cover.png",
+    "cover": "https://res.cloudinary.com/dliiwavlg/image/upload/v1618967182/papermatter_n0mznv.png",
     "urls": {
       "url": "https://magazine-starter.vercel.app/",
       "figma": "https://www.figma.com/community/file/930872073422001170/Magazine-Mobile-UI-Kit"
