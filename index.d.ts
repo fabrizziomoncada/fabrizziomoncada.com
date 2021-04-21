@@ -6,6 +6,11 @@ type TProject = {
   urls: {
     url: string
     figma: string
+    case_study: string
+  }
+  main_link: {
+    url: string
+    label: string
   }
 }
 

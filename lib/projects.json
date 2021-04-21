@@ -2,31 +2,40 @@
   {
     "slug": "tassel",
     "title": "Tassel",
-    "description": "UI & UX design for a fashion marketplace.Personal conceptual side project.",
+    "description": "UI & UX Design for a fashion mobile marketplace. Personal conceptual side project.",
     "cover": "https://res.cloudinary.com/dliiwavlg/image/upload/v1618967183/tassel_rfeuwi.png",
     "urls": {
       "url": null,
-      "figma": "https://www.figma.com/community/file/930872073422001170/Magazine-Mobile-UI-Kit"
+      "figma": "https://www.figma.com/community/file/961389527467372232/Mobile-Ecommerce-UI-Kit"
+    },
+    "main_link": {
+      "url": "https://www.behance.net/gallery/117945171/Tassel-UX-Case-Study?",
+      "label": "Read Case Study"
     }
   },
   {
     "slug": "dejame-te-cuento",
     "title": "Déjame te Cuento",
-    "description": "UI & UX design for a fashion marketplace.Personal conceptual side project.",
+    "description": "UI & UX redesign for a local, non-profit digital magazine.",
     "cover": "https://res.cloudinary.com/dliiwavlg/image/upload/v1618967184/dtc_rxv3ns.jpg",
     "urls": {
       "url": "https://magazine-starter.vercel.app/",
       "figma": "https://www.figma.com/community/file/930872073422001170/Magazine-Mobile-UI-Kit"
-    }
+    },
+    "main_link": null
   },
   {
     "slug": "the-paper-matter",
     "title": "The Paper Matter",
-    "description": "UI & UX design for a fashion marketplace.Personal conceptual side project.",
+    "description": "Website redesign for a Rendering & VR company",
     "cover": "https://res.cloudinary.com/dliiwavlg/image/upload/v1618967182/papermatter_n0mznv.png",
     "urls": {
-      "url": "https://magazine-starter.vercel.app/",
-      "figma": "https://www.figma.com/community/file/930872073422001170/Magazine-Mobile-UI-Kit"
+      "url": null,
+      "figma": null
+    },
+    "main_link": {
+      "url": "https://papermatter.xyz/",
+      "label": "Visit site"
     }
   }
 ]
