@@ -1,6 +1,7 @@
 type TProject = {
   slug: string
   title: string
+  subtitle: string
   description: string
   cover: string
   urls: {

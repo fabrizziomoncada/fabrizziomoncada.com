@@ -6,7 +6,7 @@ import s from './ProjectCard.module.css'
 import Image from 'next/image'
 
 const ProjectCard = ({
-  project: { title, description, cover, urls, main_link },
+  project: { title, description, cover, urls, main_link, subtitle },
 }: {
   project: TProject
 }) => {
@@ -21,6 +21,7 @@ const ProjectCard = ({
       />
       <div className={s.info}>
         <h3 className={s.title}>{title}</h3>
+        <p className={s.subtitle}>{subtitle}</p>
         <p className={s.description}>{description}</p>
         <div className={s.buttons}>
           {urls.url && (

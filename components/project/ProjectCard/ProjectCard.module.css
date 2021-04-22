@@ -23,6 +23,11 @@
   margin: 1.5rem 0 0;
 }
 
+.subtitle {
+  font-size: var(--text-lg);
+  margin: 0.5rem 0 0;
+}
+
 .description {
   text-align: center;
   color: var(--text-secondary);
@@ -40,6 +45,10 @@
     justify-content: space-between;
     padding: 3rem 0;
   }
+  .subtitle {
+    font-size: var(--text-md);
+  }
+
   .info {
     text-align: left;
     flex: 0 0 40%;

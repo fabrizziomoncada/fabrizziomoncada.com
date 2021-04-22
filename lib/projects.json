@@ -2,6 +2,7 @@
   {
     "slug": "tassel",
     "title": "Tassel",
+    "subtitle": "Designing an experience for a fashion marketplace",
     "description": "UI & UX Design for a fashion mobile marketplace. Personal conceptual side project.",
     "cover": "https://res.cloudinary.com/dliiwavlg/image/upload/v1618967183/tassel_rfeuwi.png",
     "urls": {
@@ -15,18 +16,38 @@
   },
   {
     "slug": "dejame-te-cuento",
-    "title": "Déjame te Cuento",
+    "title": "Déjame te cuento",
+    "subtitle": "Redesigning a local digital magazine",
     "description": "UI & UX redesign for a local, non-profit digital magazine.",
     "cover": "https://res.cloudinary.com/dliiwavlg/image/upload/v1618967184/dtc_rxv3ns.jpg",
     "urls": {
       "url": "https://magazine-starter.vercel.app/",
       "figma": "https://www.figma.com/community/file/930872073422001170/Magazine-Mobile-UI-Kit"
     },
-    "main_link": null
+    "main_link": {
+      "url": "https://www.behance.net/gallery/118022773/Djame-te-Cuento-A-Mobile-Digital-Magazine",
+      "label": "Read Case Study"
+    }
+  },
+  {
+    "slug": "podcast",
+    "title": "Podcasts",
+    "subtitle": "An open source project",
+    "description": "UI & UX Design for an open source podcasts platform.",
+    "cover": "https://res.cloudinary.com/dliiwavlg/image/upload/v1619122965/Podcasts_-_Cover_pdw8eq.jpg",
+    "urls": {
+      "url": "https://podcast-app.vercel.app/",
+      "figma": "https://www.figma.com/community/file/945882274406205263/Podcasts---UI-Kit"
+    },
+    "main_link": {
+      "url": "https://www.behance.net/gallery/118077425/Podcasts-An-open-source-project",
+      "label": "Read Case Study"
+    }
   },
   {
     "slug": "the-paper-matter",
     "title": "The Paper Matter",
+    "subtitle": "Crafting an experience for a digital services company.",
     "description": "Website redesign for a Rendering & VR company",
     "cover": "https://res.cloudinary.com/dliiwavlg/image/upload/v1618967182/papermatter_n0mznv.png",
     "urls": {
